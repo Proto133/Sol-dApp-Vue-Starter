@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, watchEffect } from 'vue';
 import store from '@/store'
-import Header from '@/components/Header.vue'
+import Header from '@/components/MainHeader.vue'
 import {useWallet} from 'solana-wallets-vue'
 const wallet = useWallet();
 watchEffect(()=> {
@@ -25,5 +25,8 @@ store.commit('setUser', wallet.publicKey.value)})
   color: #2c3e50;
 }
 
+main{
+  min-height: 600px;
+}
 
 </style>

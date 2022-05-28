@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import {computed} from 'vue'
-import Home from '../views/Home.vue'
+import Home from '../views/HomeView.vue'
 import store from '@/store'
 import { initWallet } from 'solana-wallets-vue';
 // import { useWallet } from 'solana-wallets-vue';
@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/Auth.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/AuthView.vue')
   },
   {
     path: '/other',
@@ -45,7 +45,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/Other.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/OtherView.vue')
   }
 ]
 

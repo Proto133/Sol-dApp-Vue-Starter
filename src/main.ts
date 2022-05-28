@@ -8,6 +8,7 @@ import {walletOptions} from './solana-wallets/index'
 // Styling
 // You can either import the default styles 
 import 'solana-wallets-vue/styles.css';
+import 'tui-image-editor/dist/tui-image-editor.css';
 // or create your own.
 import './assets/styles.css'
 
